@@ -1325,7 +1325,7 @@ background-image: url(../img/feature/gym.png);
 .about_part {
   position: relative;
   z-index: 1;
-  padding: 100px 0;
+  padding: 100px 0 160px;
   background-color: #f7f7f7;
   overflow: hidden;
   background-image: url(../img/feature/gym.png);
@@ -1568,6 +1568,8 @@ padding: 120px 0 160px;
 }
 .feature_part img {
 height: 100px;
+width: auto !important;
+margin: auto;
 }
 
 /* line 35, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_feature.scss */
@@ -1618,6 +1620,7 @@ height: 100px;
 .skil_part {
   position: relative;
   z-index: 1;
+  min-height: 100vh;
   padding: 100px 0;
   background-color: #f7f7f7;
   background-image: url(../img/feature/gym.png);
@@ -1864,7 +1867,7 @@ height: 100px;
 .why_part {
   position: relative;
   z-index: 1;
-  padding: 100px 0;
+  padding: 100px 0 160px;
   background-color: #f7f7f7;
   overflow: hidden;
   background-image: url(../img/feature/gym.png);
@@ -1907,7 +1910,6 @@ height: 100px;
   height: 0;
   border-width: 0 0 160px 1920px;
   border-color: transparent transparent #0d0c27 transparent;
-
 }
 .why_part .why_text {
   position: relative;

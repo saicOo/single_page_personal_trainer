@@ -156,12 +156,40 @@ if (client.length) {
     },
   });
 }
+var feature = $('.feature-carousel');
+if (feature.length) {
+  feature.owlCarousel({
+    items: 3,
+    loop: true,
+    dots: false,
+    autoplay: true,
+    autoplayHoverPause: true,
+    autoplayTimeout: 5000,
+    nav: false,
+    smartSpeed: 2000,
+    margin: 20,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      577: {
+        items:1,
+      },
+      991: {
+        items:2,
+      },
+      1200: {
+        items: 3,
+      }
+    },
+  });
+}
 
 
 document.addEventListener("DOMContentLoaded", function() {
   
   var progressBar = document.querySelectorAll(".progress-bar");
-  var time = 1500;
+  var time = 15000;
   
 
   progressBar.forEach(function(i) {
@@ -184,7 +212,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 //16. Overlay
 $(".snake").snakeify({
-  speed: 200
+  speed: 250
 });
 }(jQuery));
 
