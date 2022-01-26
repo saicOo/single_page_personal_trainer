@@ -1,11 +1,13 @@
 /* 1. Proloder */
 $(window).on('load', function () {
-  $('#preloader-active').delay(2000).fadeOut('slow');
-  $('body').delay(2000).css({
+  $('#preloader-active').delay(500).fadeOut('slow');
+  $('body').delay(500).css({
     'overflow': 'visible'
   });
 });
 
+        new WOW().init();
+    
 (function ($) {
   "use strict";
 
@@ -62,53 +64,6 @@ $(window).on('load', function () {
       $('.home_menu').removeClass('home_menu_fixed animated fadeInDown');
     }
   });
-
-
-  $('.slider').slick({
-    slidesToShow: 1,
-    speed: 1000,
-    infinite: true,
-    autoplay:false,
-    pauseOnHover: true,
-    dots: false,
-    prevArrow: '<i class="slick_left flaticon-left-arrow"></i>',
-    nextArrow: '<i class="slick_right flaticon-arrow-pointing-to-right"></i>',
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-        }
-      },
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false
-        }
-      }, 
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false
-        }
-      }
-    ]
-  });
-
   if ($('.img-gal').length > 0) {
 		$('.img-gal').magnificPopup({
 			type: 'image',
@@ -212,8 +167,17 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 //16. Overlay
 $(".snake").snakeify({
-  speed: 250
+  speed: 200
 });
+
+$(".img-item").slice(0, 4).show()
+        $(".show-gallary").on("click", function(){
+            $(".img-item:hidden").slice(0, 3).slideDown()
+            if ($(".img-item:hidden").length == 0) {
+                $(".show-gallary").fadeOut('slow')
+            }
+        });
+
 }(jQuery));
 
 // changs tabs
@@ -242,3 +206,4 @@ itemAnswer.forEach((item) => {
         e.target.nextElementSibling.classList.toggle('show');
     })
 });
+        
