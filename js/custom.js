@@ -177,6 +177,9 @@ $(".img-item").slice(0, 4).show()
                 $(".show-gallary").fadeOut('slow')
             }
         });
+        $(function(){
+          $("img.lazy").lazyload();
+        })
 
 }(jQuery));
 

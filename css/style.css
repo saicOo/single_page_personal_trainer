@@ -2,13 +2,15 @@
 @import url("https://fonts.googleapis.com/css?family=Anton|Poppins:300,400,500,600,700&display=swap");
 /* line 6, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_extends.scss */
 .btn_1 {
-  /* background-image: linear-gradient(to right, #f3333e 0% , #751419 50%, #f3333e 100%); */
-  background-image: linear-gradient(to right, rgb(19 18 42) 0%, rgb(42 37 147) 50%, rgb(10 10 20) 100%);}
+  -webkit-background-image: linear-gradient(to right, rgb(19 18 42) 0%, rgb(42 37 147) 50%, rgb(10 10 20) 100%);
+  background-image: linear-gradient(to right, rgb(19 18 42) 0%, rgb(42 37 147) 50%, rgb(10 10 20) 100%);
+}
 
 /**************** extend css start ****************/
 /**************** common css start ****************/
 /* line 4, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_common.scss */
 html{
+  -webkit-scroll-behavior: smooth;
   scroll-behavior: smooth;
 }
 body {
@@ -773,6 +775,7 @@ ul {
   z-index: 99;
   top: 0;
   padding: 0px 60px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   right: -100%;
   z-index: 1;
@@ -1003,6 +1006,7 @@ ul {
   display: block;
   height: 2px;
   background: #000;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -1299,6 +1303,7 @@ background-image: url(../img/feature/gym.png);
 .client_part .single_client_logo img:hover {
   filter: grayscale(0);
   -webkit-filter: grayscale(0);
+  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
@@ -2024,29 +2029,28 @@ margin: auto;
 /* line 22, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_gallery.scss */
 .gallery_part .box .gallery-img {
   height: 365px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: #fff;
 }
 
 /* line 27, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_gallery.scss */
 .gallery_part .box .big-img {
   height: 300px;
+  object-fit: cover;
+  object-position: center;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* line 27, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_gallery.scss */
-  .gallery_part .box .big-img {
+  /* .gallery_part .box .big-img {
     height: 435px;
-  }
+  } */
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* line 27, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_gallery.scss */
-  .gallery_part .box .big-img {
+  /* .gallery_part .box .big-img {
     height: 435px;
-  }
+  } */
 }
 
 /* line 36, C:/Users/HP/Desktop/July-HTML/292 Health coach/assets/scss/_gallery.scss */
@@ -2253,13 +2257,10 @@ flex-wrap: wrap;
 .offer_area h2{
   position: relative;
   font-size: 70px;
-  /* display: inline-block; */
   font-weight: 700;
   text-transform: uppercase;
   color: transparent;
-  /* line-height: 1; */
   -webkit-text-stroke: 1px #f6f7f8;
-  /* -webkit-text-fill-color: transparent; */
 }
 .offer_area h2::before{
   content: attr(data-fill-text);
@@ -2269,7 +2270,7 @@ flex-wrap: wrap;
   color: #f6f7f8;
   overflow: hidden;
   -webkit-text-stroke: 0px transparent;
-/* transition: width 2s cubic-bezier(0, 0.29, 0.81, 0.08); */
+  -webkit-animation: moveText 4s ease-in-out infinite;
 animation: moveText 4s ease-in-out infinite;
 }
 @keyframes moveText{
@@ -2318,6 +2319,7 @@ width: 0%;
   background-color: #0d0c27;
   overflow: hidden;
   position: relative;
+  min-height: 100vh;
 }
 .common-question::after {
   width: 100% ;
@@ -2347,6 +2349,7 @@ width: 0%;
   border-radius: 5px;
   cursor: pointer;
   position: relative;
+  -webkit-transition: border .5s;
   transition: border .5s;
   color: #000;
 }
@@ -2369,6 +2372,7 @@ width: 0%;
   border: 1px solid #f7f7f7;
   border-radius: 5px;
   display: none;
+  -webkit-transition: all .5s;
   transition: all .5s;
   overflow: hidden;
 }
@@ -2382,6 +2386,7 @@ width: 0%;
   background-color: #fff;
   border-bottom: 1px solid #f2e8f7;
   color: #000;
+  -webkit-transition: all .5s;
   transition: all .5s;
   position: relative;
   cursor: pointer;
@@ -2405,6 +2410,7 @@ width: 0%;
   border-radius: 50%;
   background-color: #fff;
   text-align: center;
+  -webkit-transition: all .5s;
   transition: all .5s;
 }
 .common-question ul.answer li.item:hover>i{
@@ -2416,6 +2422,7 @@ width: 0%;
   font-size: 18px;
   line-height: .5;
   overflow: hidden;
+  -webkit-transition: all .5s ease-in;
   transition: all .5s ease-in;
 }
 .common-question ul.answer .answer-text p{
