@@ -1015,7 +1015,7 @@ ul {
 .banner_part {
   height: 1000px;
   position: relative;
-  background-image: linear-gradient(to right, rgb(21 18 96), rgb(0 0 0 / 48%)), url(../img/main/IMG_4076.jpg);
+  background-image: linear-gradient(to right, rgb(21 18 96), rgb(0 0 0 / 48%)), url(../img/main/IMG_4076.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -1271,7 +1271,7 @@ ul {
 /* line 3, ../../01 cl html template/03_jun 2019/181_Fitness Trainer_html/sass/_client_part.scss */
 .client_part{
 background-color: #f7f7f7;
-background-image: url(../img/feature/gym.png);
+background-image: url(../img/feature/gym.webp);
   background-repeat: round;
   
 }
@@ -1315,7 +1315,7 @@ background-image: url(../img/feature/gym.png);
   padding: 100px 0 160px;
   background-color: #f7f7f7;
   overflow: hidden;
-  background-image: url(../img/feature/gym.png);
+  background-image: url(../img/feature/gym.webp);
   background-repeat: round;
 }
 .about_part .about_img{
@@ -1551,7 +1551,7 @@ margin: auto;
   left: 15%;
   top: 10%;
   content: "";
-  background-image: url(../img/single_feature_bg.png);
+  background-image: url(../img/single_feature_bg.webp);
   width: 70%;
   height: 100%;
   background-size: contain;
@@ -1596,7 +1596,7 @@ margin: auto;
   min-height: 100vh;
   padding: 100px 0;
   background-color: #f7f7f7;
-  background-image: url(../img/feature/gym.png);
+  background-image: url(../img/feature/gym.webp);
   background-repeat: round;
 }
 
@@ -1710,7 +1710,7 @@ margin: auto;
 }
 .cta_area .our_expesience {
   text-align: center;
-  background-image: url(../img/single_feature_bg.png);
+  background-image: url(../img/single_feature_bg.webp);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
@@ -1826,7 +1826,7 @@ margin: auto;
   padding: 100px 0 160px;
   background-color: #f7f7f7;
   overflow: hidden;
-  background-image: url(../img/feature/gym.png);
+  background-image: url(../img/feature/gym.webp);
   background-repeat: round;
 }
 .why_part .why_img{
@@ -1975,7 +1975,7 @@ margin: auto;
   padding-left: 45px;
   padding-right: 45px;
   background-color: #0d0c27;
-  background-image: url(../img/feature/dumbbell.png);
+  background-image: url(../img/feature/dumbbell.webp);
   background-repeat: round;
   position: relative;
   overflow: hidden;
