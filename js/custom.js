@@ -204,8 +204,6 @@ let itemAnswer = document.querySelectorAll('.answer .item');
 itemAnswer.forEach((item) => {
     item.addEventListener('click', function (e){
         e.target.classList.toggle('style');
-        e.target.firstElementChild.classList.toggle('fa-plus');
-        e.target.firstElementChild.classList.toggle('fa-minus');
         e.target.nextElementSibling.classList.toggle('show');
     })
 });

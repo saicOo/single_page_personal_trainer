@@ -1,41 +1,37 @@
 <?php
-  /**
-  * Requires the "PHP Email Form" library
-  * The "PHP Email Form" library is available only in the pro version of the template
-  * The library should be uploaded to: vendor/php-email-form/php-email-form.php
-  * For more info and help: https://bootstrapmade.com/php-email-form/
-  */
 
-  // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'sayed.ahmed.elbadry@gmail.com';
+    $to = "example@gmail.com";
+    $from = $_REQUEST['email'];
+    $name = $_REQUEST['name'];
+    $subject = $_REQUEST['subject'];
+    // $number = $_REQUEST['number'];
+    $cmessage = $_REQUEST['message'];
 
-  if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
-    include( $php_email_form );
-  } else {
-    die( 'Unable to load the "PHP Email Form" Library!');
-  }
+    $headers = "From: $from";
+	$headers = "From: " . $from . "\r\n";
+	$headers .= "Reply-To: ". $from . "\r\n";
+	$headers .= "MIME-Version: 1.0\r\n";
+	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-  $contact = new PHP_Email_Form;
-  $contact->ajax = true;
-  
-  $contact->to = $receiving_email_address;
-  $contact->from_name = $_POST['name'];
-  $contact->from_email = $_POST['email'];
-  $contact->subject = $_POST['subject'];
+    $subject = "You have a message from your Bitmap Photography.";
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
-  $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
-    'port' => '587'
-  );
-  */
+    $logo = 'img/client_logo/Logo_1.png';
+    $link = 'https://saicoo.github.io/single_page_personal_trainer';
 
-  $contact->add_message( $_POST['name'], 'From');
-  $contact->add_message( $_POST['email'], 'Email');
-  $contact->add_message( $_POST['message'], 'Message', 10);
+	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Express Mail</title></head><body>";
+	$body .= "<table style='width: 100%;'>";
+	$body .= "<thead style='text-align: center;'><tr><td style='border:none;' colspan='2'>";
+	$body .= "<a href='{$link}'><img src='{$logo}' alt=''></a><br><br>";
+	$body .= "</td></tr></thead><tbody><tr>";
+	$body .= "<td style='border:none;'><strong>Name:</strong> {$name}</td>";
+	$body .= "<td style='border:none;'><strong>Email:</strong> {$from}</td>";
+	$body .= "</tr>";
+	$body .= "<tr><td style='border:none;'><strong>Subject:</strong> {$subject}</td></tr>";
+	$body .= "<tr><td></td></tr>";
+	$body .= "<tr><td colspan='2' style='border:none;'>{$cmessage}</td></tr>";
+	$body .= "</tbody></table>";
+	$body .= "</body></html>";
 
-  echo $contact->send();
+    $send = mail($to, $subject, $body, $headers);
+
 ?>

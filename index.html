@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="health nutrition specialist , Certified fitness trainer , Massage Therapist special">
-    <title>Fitness Instructor | Shiko</title>
+    <title>Fitness Trainer</title>
     <link rel="icon" href="./img/logo.png" sizes="144*144">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -16,15 +16,15 @@
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <!-- font awesome CSS -->
     <link rel="stylesheet" href="./css/magnific-popup.css">
-    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
     <!-- swiper CSS -->
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/gijgo.min.css">
     <link rel="stylesheet" href="./css/nice-select.css">
     <link rel="stylesheet" href="./css/all.css">
+    <!-- preloader CSS -->
+    <link rel="stylesheet" href="./css/preloader.css">
     <!-- style CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" id="style">
 </head>
 
 <body>
@@ -40,6 +40,11 @@
             </div>
         </div>
         <!-- Preloader Start -->
+        <!-- start popup wats app -->
+<a href="#" class="popup-wats" target="_blank"  rel="noopener" >
+    <i class="fab fa-whatsapp my-popup-wats"></i>
+    </a>
+    <!-- end popup wats app -->
     <nav  class="navbar navbar-expand-lg  main_menu home_menu">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="./img/logo.webp" alt="logo" style="height: 50px;"></span></a>
@@ -47,25 +52,31 @@
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link lang" href="#about" key="ABOUT"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#features">Features</a>
+                        <a class="nav-link lang" href="#features" key="FEATURES"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skill">Skill</a>
+                        <a class="nav-link lang" href="#skill" key="SLILL"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#whyme">Why me</a>
+                        <a class="nav-link lang" href="#whyme" key="WHY"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link lang" href="#portfolio" key="PORTFOLIO"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#faq">FAQ</a>
+                        <a class="nav-link lang" href="#faq" key="FAQ"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link lang" href="#contact" key="CONTACT"></a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="translate nav-link btn" id="en" language="en" style="display: none;color: rgb(243, 51, 62);">English</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="translate nav-link btn" id="ar" language="ar" style="display: none;color: rgb(243, 51, 62);" >اللغة العربية</button>
                     </li>
 
                 </ul>
@@ -83,15 +94,20 @@
                         </span>
 
                         <div class="canven-menu-warp">
+                            <div class="canven-menu-lang">
+
+                                <button class="translate btn tans-mobile" language="en" id="en-mobil" style="">English</button>
+                                <button class="translate btn tans-mobile" language="ar" id="ar-mobil" style="" >اللغة العربية</button>
+                            </div>
                             <div class="canven-menu-iner">
                                 <ul>
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#features">Features</a></li>
-                                    <li><a href="#skill">Skill</a></li>
-                                    <li><a href="#Whyme">Why me</a></li>
-                                    <li><a href="#portfolio">Portfolio</a></li>
-                                    <li><a href="#faq">FAQ</a></li>
-                                    <li><a href="#contact">Contact</a></li>
+                                    <li><a class="lang" href="#about" key="ABOUT">About</a></li>
+                                    <li><a class="lang" href="#features" key="FEATURES">Features</a></li>
+                                    <li><a class="lang" href="#skill" key="SLILL">Skill</a></li>
+                                    <li><a class="lang" href="#whyme" key="WHY">Why me</a></li>
+                                    <li><a class="lang" href="#portfolio" key="PORTFOLIO">Portfolio</a></li>
+                                    <li><a class="lang" href="#faq" key="FAQ">FAQ</a></li>
+                                    <li><a class="lang" href="#contact" key="CONTACT">Contact</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -112,10 +128,10 @@
                 <div class="col-lg-6">
                     <div class="banner_text">
                         <div class="banner_text_iner wow flash" data-wow-delay="2s">
-                            <h5>Hey</h5>
-                            <h1>Are you ready for a new life</h1>
+                            <h5 class="lang" key="HEY">Hey</h5>
+                            <h1 class="lang" key="BANNER-HEADER">Are you ready for a new life</h1>
                             <div class="banner_btn">
-                                <a href="https://api.whatsapp.com/send/?phone=201110769707&text&app_absent=0" target="_blank" rel="noopener" class="btn_1">Hire me</a>
+                                <a href="#" target="_blank" rel="noopener" class="btn_1 lang" key="BTN_START">start here</a>
                             </div>
                         </div>
                     </div>
@@ -131,7 +147,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-8">
                     <div class="section_tittle text-center wow bounceIn" data-wow-offset="300">
-                        <h2>Some Latest <span>Gym</span> With me</h2>
+                        <h2 class="lang" trans="SOME_GYM" >Some Latest <span>Gym</span> With me</h2>
                     </div>
                 </div>
             </div>
@@ -176,10 +192,10 @@
                     </div>
                 </div>
                 <div class="col-md-6 wow fadeInUp" data-wow-offset="200" data-wow-duration="3s">
-                    <div class="about_text ">
-                        <h2 class=" wow bounceIn" data-wow-offset="400" >about <span>me</span></h2>
+                    <div class="about_text">
+                        <h2 class=" wow bounceIn lang" data-wow-offset="400" key="ABOUT">about <span>me</span></h2>
                         <div class="about_text_iner">
-                            <p> <span>Gym Instructor who combines individual exercise sessions with comprehensive
+                            <p> <span class="lang" key="ABOUT_TEXT">Gym Instructor who combines individual exercise sessions with comprehensive
                                     nutritional counseling to help clients achieve personal goals. Enjoys inspiring
                                     others to commit to long-term health and fitness goals. Encourages activities and
                                     coping methods that transform unhealthy habits and fuel healthy minds and
@@ -199,7 +215,8 @@
             <div class="row justify-content-center">
                 <div class="col-xl-8">
                     <div class="section_tittle text-center dark wow bounceIn" data-wow-offset="300">
-                        <h2>WHAT <span>I</span> OFFER</h2>
+                        <!-- <h2 class="lang" key="FEATURES_HEADER">WHAT I OFFER</h2> -->
+                        <h2 class="feature_offer" >WHAT I <span>OFFER</span></h2>
                     </div>
                 </div>
             </div>
@@ -207,24 +224,22 @@
 
                     <div class="single_feature_part">
                         <img src="img/feature/salad1.webp" alt="image">
-                        <h3>health nutrition specialist</h3>
-                        <p>Provide nutritional guidance - Food selection strategies - choosing whole foods, good sources
-                            of fats or proteins, etc.</p>
+                        <h3 class="lang" key="F_PART_1">health nutrition specialist</h3>
+                        <p class="lang" key="F_PART_P_1">Provide nutritional guidance - Food selection strategies - choosing whole foods, good sources of fats or proteins, etc.</p>
                     </div>
                 
 
                     <div class="single_feature_part">
                         <img src="img/feature/muscle.webp" alt="image">
-                        <h3>Certified fitness trainer</h3>
-                        <p>Personal training is all about helping other people reach their fitness goals</p>
+                        <h3 class="lang" key="F_PART_2">Certified fitness trainer</h3>
+                        <p class="lang" key="F_PART_P_2">Personal training is all about helping other people reach their fitness goals</p>
                     </div>
                 
 
                     <div class="single_feature_part">
                         <img src="img/feature/massage1.webp" alt="image">
-                        <h3>Massage Therapist special</h3>
-                        <p>Provide clients with guidance on stretching, strengthening, overall relaxation, and how to
-                            improve their posture</p>
+                        <h3 class="lang" key="F_PART_3">Massage Therapist special</h3>
+                        <p class="lang" key="F_PART_P_3">Provide clients with guidance on stretching, strengthening, overall relaxation, and how to improve their posture</p>
                     </div>
             </div>
         </div>
@@ -236,7 +251,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-8">
                     <div class="section_tittle text-center wow bounceIn" data-wow-offset="300">
-                        <h2>Skills <span>me</span></h2>
+                        <h2 trans="skill">Skills <span>me</span></h2>
                     </div>
                 </div>
             </div>
@@ -244,7 +259,7 @@
                 <div class="col-md-6 wow fadeInUp" data-wow-offset="200" data-wow-duration="3s">
                     <div class="skil_text">
                         <div class="single_skil">
-                            <p>Free Hand Workout</p>
+                            <p class="lang" key="SKIL1">Swimming</p>
                             <div class="progress-bar">
                                 <div class="label" data-count="90">90%</div>
                                 <div class="line">
@@ -253,7 +268,7 @@
                             </div>
                         </div>
                         <div class="single_skil">
-                            <p>Gym Trainer</p>
+                            <p class="lang" key="SKIL2">kickbox</p>
                             <div class="progress-bar">
                                 <div class="label" data-count="85">85%</div>
                                 <div class="line">
@@ -262,7 +277,7 @@
                             </div>
                         </div>
                         <div class="single_skil">
-                            <p>Hard Workout </p>
+                            <p class="lang" key="SKIL3">Horse riding</p>
                             <div class="progress-bar">
                                 <div class="label" data-count="70">70%</div>
                                 <div class="line">
@@ -271,7 +286,7 @@
                             </div>
                         </div>
                         <div class="single_skil">
-                            <p>Soft Workout</p>
+                            <p class="lang" key="SKIL4">handball</p>
                             <div class="progress-bar">
                                 <div class="label" data-count="80">80%</div>
                                 <div class="line">
@@ -280,9 +295,9 @@
                             </div>
                         </div>
                         <div class="single_skil">
-                            <p>Foot Ball </p>
+                            <p class="lang" key="SKIL5">Foot Ball</p>
                             <div class="progress-bar">
-                                <div class="label" data-count="80">90%</div>
+                                <div class="label" data-count="90">90%</div>
                                 <div class="line">
                                     <span></span>
                                 </div>
@@ -297,6 +312,7 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </section>
     <!--::skil part end::-->
@@ -311,16 +327,16 @@
                             <div class="col-lg-3 col-md-3 wow fadeInUp" data-wow-duration="3s" data-wow-offset="200">
                                 <div class="our_expesience">
                                     <h2>8</h2>
-                                    <p>Years Expesience</p>
+                                    <p class="lang" key="YAERS_EX">Years Expesience</p>
                                 </div>
                             </div>
                             <div class="col-lg-9 col-md-9 wow fadeInUp" data-wow-duration="3s" data-wow-offset="200">
                                 <div class="cta_text d-flex justify-content-between align-items-center">
                                     <div class="cta_text_iner">
-                                        <p>Hire me to get the best</p>
-                                        <h2>Want to start your next workout with me?</h2>
+                                        <p class="lang" key="CTA_P">Hire me to get the best</p>
+                                        <h2 class="lang" key="CTA_H">Want to start your next workout with me?</h2>
                                     </div>
-                                    <a href="https://api.whatsapp.com/send/?phone=201110769707&text&app_absent=0" target="_blank" rel="noopener" class="btn_1">hire me</a>
+                                    <a href="#" target="_blank" rel="noopener" class="btn_1 lang" key="BTN_START">start here</a>
                                 </div>
                             </div>
                         </div>
@@ -336,15 +352,15 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-md-6 wow fadeInUp "data-wow-duration="3s"  data-wow-offset="200">
                     <div class="why_text ">
-                        <h2 class=" wow bounceIn" data-wow-offset="450" >Training with <span>Shiko</span></h2>
+                        <h2 class=" wow bounceIn lang" data-wow-offset="450" key="WHY_HEADER">Training with Shiko</h2>
                         <div class="why_text_iner">
-                            <p> <span>We should all have confidence in our body, both in the way it looks and what it is capable of. </span>
+                            <p> <span class="lang" key="WHY_P_1">We should all have confidence in our body, both in the way it looks and what it is capable of. </span>
                             </p>
-                            <p> <span>You may have suffered an injury, gained weight, or been through a period of inactivity. You want to get fitter, stronger and leaner, but you are unsure how to get started and worried about re-injury. </span>
+                            <p> <span class="lang" key="WHY_P_2">You may have suffered an injury, gained weight, or been through a period of inactivity. You want to get fitter, stronger and leaner, but you are unsure how to get started and worried about re-injury. </span>
                             </p>
-                            <p> <span>I am here to help you regain that confidence and rebuild your body. </span>
+                            <p> <span class="lang" key="WHY_P_3">I am here to help you regain that confidence and rebuild your body. </span>
                             </p>
-                            <p> <span>How we work together is up to you.. </span>
+                            <p> <span class="lang" key="WHY_P_4">How we work together is up to you. </span>
                             </p>
                         </div>
                         <div class="shape1">
@@ -390,7 +406,7 @@
             <div class="row justify-content-center">
                 <div class="col-xl-8">
                     <div class="section_tittle dark text-center wow bounceIn" data-wow-offset="300">
-                        <h2>Latest <span>Player</span> Showcase</h2>
+                        <h2 class="lang" trans="PLAYERS_HEADER">Latest <span>Players</span> Showcase</h2>
                     </div>
                 </div>
             </div>
@@ -401,7 +417,7 @@
                         <img class="lazy gallery-img big-img" src="./img/main/player1.webp" alt="image" data-original="./img/main/player1.webp">
                         <div class="overlay">
                             <div class="overlay-content">
-                                <h5>Muscle gaining </h5>
+                                <h5></h5>
                                 <a class="grid-item img-gal" href="img/main/player1.webp"><i class="fas fa-search-plus"></i></a>
                             </div>
                         </div>
@@ -409,33 +425,33 @@
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 p-3 img-item">
                     <div class="box snake mb-30">
-                        <img class="lazy gallery-img big-img" src="./img/loader.gif" alt="image" data-original="./img/main/player2.webp">
+                        <img class="lazy gallery-img big-img" src="./img/loader.gif" alt="image" data-original="./img/main/player1.webp">
                         <div class="overlay">
                             <div class="overlay-content">
-                                <h5>Muscle gaining </h5>
-                                <a class="grid-item img-gal" href="img/main/player2.webp"><i class="fas fa-search-plus"></i></a>
+                                <h5></h5>
+                                <a class="grid-item img-gal" href="img/main/player1.webp"><i class="fas fa-search-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 p-3 img-item">
                     <div class="box snake mb-30">
-                        <img class="lazy gallery-img big-img" src="./img/loader.gif" alt="image" data-original="./img/main/player3.webp">
+                        <img class="lazy gallery-img big-img" src="./img/loader.gif" alt="image" data-original="./img/main/player1.webp">
                         <div class="overlay">
                             <div class="overlay-content">
-                                <h5>Muscle gaining </h5>
-                                <a class="grid-item img-gal" href="img/main/player3.webp"><i class="fas fa-search-plus"></i></a>
+                                <h5></h5>
+                                <a class="grid-item img-gal" href="img/main/player1.webp"><i class="fas fa-search-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 p-3 img-item">
                     <div class="box snake mb-30">
-                        <img class="lazy gallery-img big-img" src="./img/loader.gif" alt="image" data-original="./img/main/player4.webp">
+                        <img class="lazy gallery-img big-img" src="./img/loader.gif" alt="image" data-original="./img/main/player1.webp">
                         <div class="overlay">
                             <div class="overlay-content">
-                                <h5>Muscle gaining </h5>
-                                <a class="grid-item img-gal" href="img/main/player4.webp"><i class="fas fa-search-plus"></i></a>
+                                <h5></h5>
+                                <a class="grid-item img-gal" href="img/main/player1.webp"><i class="fas fa-search-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -443,33 +459,33 @@
                 <!-- center -->
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 p-3 img-item">
                     <div class="box snake mb-30">
-                        <img class="lazy gallery-img big-img" src="./img/loader.gif" alt="image" data-original="./img/main/player6.webp">
+                        <img class="lazy gallery-img big-img" src="./img/loader.gif" alt="image" data-original="./img/main/player1.webp">
                         <div class="overlay">
                             <div class="overlay-content">
-                                <h5>Muscle gaining </h5>
-                                <a class="grid-item img-gal" href="img/main/player6.webp"><i class="fas fa-search-plus"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6 col-lg-4 col-md-6 col-sm-6 p-3 img-item">
-                    <div class="box snake mb-30">
-                        <img class="lazy gallery-img big-img" src="./img/loader.gif" alt="image" data-original="./img/main/player5.webp">
-                        <div class="overlay">
-                            <div class="overlay-content">
-                                <h5>Muscle gaining </h5>
-                                <a class="grid-item img-gal" href="img/main/player5.webp"><i class="fas fa-search-plus"></i></a>
+                                <h5></h5>
+                                <a class="grid-item img-gal" href="img/main/player1.webp"><i class="fas fa-search-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 p-3 img-item">
                     <div class="box snake mb-30">
-                        <img class="lazy gallery-img big-img" src="./img/loader.gif" alt="image" data-original="./img/main/player7.webp">
+                        <img class="lazy gallery-img big-img" src="./img/loader.gif" alt="image" data-original="./img/main/player1.webp">
                         <div class="overlay">
                             <div class="overlay-content">
-                                <h5>Muscle gaining </h5>
-                                <a class="grid-item img-gal" href="img/main/player7.webp"><i class="fas fa-search-plus"></i></a>
+                                <h5></h5>
+                                <a class="grid-item img-gal" href="img/main/player1.webp"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 p-3 img-item">
+                    <div class="box snake mb-30">
+                        <img class="lazy gallery-img big-img" src="./img/loader.gif" alt="image" data-original="./img/main/player1.webp">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h5></h5>
+                                <a class="grid-item img-gal" href="img/main/player1.webp"><i class="fas fa-search-plus"></i></a>
                             </div>
                         </div>
                     </div>
@@ -477,51 +493,61 @@
                 <!-- footer -->
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 p-3 img-item">
                     <div class="box snake mb-30">
-                        <img class="lazy gallery-img big-img" src="./img/loader.gif" alt="image" data-original="./img/main/player8.webp">
+                        <img class="lazy gallery-img big-img" src="./img/loader.gif" alt="image" data-original="./img/main/player1.webp">
                         <div class="overlay">
                             <div class="overlay-content">
-                                <h5>Muscle gaining </h5>
-                                <a class="grid-item img-gal" href="img/main/player8.webp"><i class="fas fa-search-plus"></i></a>
+                                <h5></h5>
+                                <a class="grid-item img-gal" href="img/main/player1.webp"><i class="fas fa-search-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 p-3 img-item">
                     <div class="box snake mb-30">
-                        
-                        <img class="lazy gallery-img big-img" src="./img/loader.gif" alt="image" data-original="./img/main/player9.webp">
+                        <img class="lazy gallery-img big-img" src="./img/loader.gif" alt="image" data-original="./img/main/player1.webp">
                         <div class="overlay">
                             <div class="overlay-content">
-                                <h5>Muscle gaining </h5>
-                                <a class="grid-item img-gal" href="img/main/player9.webp"><i class="fas fa-search-plus"></i></a>
+                                <h5></h5>
+                                <a class="grid-item img-gal" href="img/main/player1.webp"><i class="fas fa-search-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 p-3 img-item">
                     <div class="box snake mb-30">
-                        <img class="lazy gallery-img big-img" src="./img/loader.gif" alt="image" data-original="./img/main/palyer10.webp">
+                        <img class="lazy gallery-img big-img" src="./img/loader.gif" alt="image" data-original="./img/main/player1.webp">
                         <div class="overlay">
                             <div class="overlay-content">
-                                <h5>Muscle gaining </h5>
-                                <a class="grid-item img-gal" href="img/main/palyer10.webp"><i class="fas fa-search-plus"></i></a>
+                                <h5></h5>
+                                <a class="grid-item img-gal" href="img/main/player1.webp"><i class="fas fa-search-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 p-3 img-item">
                     <div class="box snake mb-30">
-                        <img class="lazy gallery-img big-img" src="./img/loader.gif" alt="image" data-original="./img/main/img1.webp">
+                        <img class="lazy gallery-img big-img" src="./img/loader.gif" alt="image" data-original="./img/main/player1.webp">
                         <div class="overlay">
                             <div class="overlay-content">
-                                <h5>Muscle gaining </h5>
-                                <a class="grid-item img-gal" href="img/main/img1.webp"><i class="fas fa-search-plus"></i></a>
+                                <h5></h5>
+                                <a class="grid-item img-gal" href="img/main/player1.webp"><i class="fas fa-search-plus"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 p-3 img-item">
+                    <div class="box snake mb-30">
+                        <img class="lazy gallery-img big-img" src="./img/loader.gif" alt="image" data-original="./img/main/player1.webp">
+                        <div class="overlay">
+                            <div class="overlay-content">
+                                <h5></h5>
+                                <a class="grid-item img-gal" href="img/main/player1.webp"><i class="fas fa-search-plus"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <button class="btn_3 show-gallary">Load More <div class="spinner-border text-light" role="status">
+            <button class="btn_3 show-gallary"><span class="lang" key="LOAD_MORE">Load More</span> <div class="spinner-border text-light" role="status">
                 <span class="sr-only">Loading...</span>
               </div></button>
         </div>
@@ -530,8 +556,8 @@
     <!-- offer_area  start-->
     <section class="offer_area ">
         <div class="container">
-<h2 data-fill-text="start>with>me>now">start>with>me>now</h2>
-<a href="https://api.whatsapp.com/send/?phone=201110769707&text&app_absent=0" target="_blank" rel="noopener" class="btn_1">hire me</a>
+<h2 data-fill-text="start>with>me>now" data-fill-text-rtl="ابدأ>معي>الأن" class="lang" key="START_WITH">start>with>me>now</h2>
+<a href="#" target="_blank" rel="noopener" class="btn_1 lang" key="BTN_START">start here</a>
         </div>
     </section>
     <!-- offer_area  end-->
@@ -541,142 +567,117 @@
             <div class="row justify-content-center ">
                 <div class="col-xl-8">
                     <div class="section_tittle text-center dark wow bounceIn" data-wow-offset="300">
-                        <h2>COMMON <span>QUESTION</span> & <span>ANSWER</span></h2>
+                        <h2 trans="FAQ_HEADER">COMMON <span>QUESTION</span> & <span>ANSWER</span></h2>
                     </div>
                 </div>
             </div>
     <div class="row">
         <div class="col-lg-4 wow fadeInUp" data-wow-duration="3s" data-wow-offset="200">
           <ul class="question">
-            <li class="item active" data-ques=".q1">planning your workout</li>
-            <li class="item" data-ques=".q2">during your workout</li>
-            <li class="item" data-ques=".q3">after your workout</li>
-            <li class="item" data-ques=".q4">Some other common questions</li>
+            <li class="item lang active" data-ques=".q1" key="Q_LIST_1">planning your workout</li>
+            <li class="item lang" data-ques=".q2" key="Q_LIST_2">during your workout</li>
+            <li class="item lang" data-ques=".q3" key="Q_LIST_3">after your workout</li>
+            <li class="item lang" data-ques=".q4" key="Q_LIST_4">Some other common questions</li>
           </ul>
         </div>
         <div class="col-lg-8 wow fadeInUp" data-wow-duration="3s" data-wow-offset="200">
           <!-- lest one -->
           <ul class="answer q1 show">
               <!-- 1 -->
-            <li class="item">Is working out in the morning better for you?<i class="fas fa-plus"></i></li>
+            <li class="item lang" key="A_LIST1_1"> >Is working out in the morning better for you?</li>
             <div class="answer-text">
-              <p>You should exercise at a time that suits you and your body. There’s no evidence to suggest that an early morning workout is better for you, but some people are just more efficient at this time. You’ll get results regardless of the time of day, as long as it works for you.</p>
+              <p class="lang"  key="A_PARAGRAPH1_1">You should exercise at a time that suits you and your body. There’s no evidence to suggest that an early morning workout is better for you, but some people are just more efficient at this time. You’ll get results regardless of the time of day, as long as it works for you.</p>
             </div>
             <!-- 2 -->
-            <li class="item">Should I approach my sessions with a plan?<i class="fas fa-plus"></i></li>
+            <li class="item lang " key="A_LIST1_2">Should I approach my sessions with a plan?</li>
             <div class="answer-text">
-              <p>Yes, this will help you get the most out of your workout. Decide which muscle groups you want to work on, whether you’re doing a strength session or a HIIT workout and what equipment you’ll need. Then, think about how many reps and sets you’re going to perform. That way, you won’t waste time procrastinating and you’ll work harder as a result.</p>
+              <p class="lang"  key="A_PARAGRAPH1_2">Yes, this will help you get the most out of your workout. Decide which muscle groups you want to work on, whether you’re doing a strength session or a HIIT workout and what equipment you’ll need. Then, think about how many reps and sets you’re going to perform. That way, you won’t waste time procrastinating and you’ll work harder as a result.</p>
             </div>
             <!-- 3 -->
-            <li class="item">Do I need to work out every day?<i class="fas fa-plus"></i></li>
+            <li class="item lang " key="A_LIST1_3">Do I need to work out every day?</li>
             <div class="answer-text">
-              <p>A good workout week doesn’t necessarily mean training every day. Three to four gym or home workouts each week is enough if you work as hard as you can in each session. Try to balance the week with a mix of cardio, HIIT, strength and yoga or Pilates. However, when it comes to being active you should aim to move as much as you can every day – whether that’s with brisk walking, jogging, swimming, gardening or putting your all into the housework!</p>
+              <p class="lang"  key="A_PARAGRAPH1_3">A good workout week doesn’t necessarily mean training every day. Three to four gym or home workouts each week is enough if you work as hard as you can in each session. Try to balance the week with a mix of cardio, HIIT, strength and yoga or Pilates. However, when it comes to being active you should aim to move as much as you can every day – whether that’s with brisk walking, jogging, swimming, gardening or putting your all into the housework!</p>
             </div>
             <!-- 4 -->
-            <li class="item">How long do I need to work out for?<i class="fas fa-plus"></i></li>
+            <li class="item lang" key="A_LIST1_4">How long do I need to work out for?</li>
             <div class="answer-text">
-              <p>This depends on your fitness levels, what type of training you’re doing and what intensity you’re training at. Just remember, something is always better than nothing. If you only have 30 minutes, try to fit in a quick HIIT (High Intensity Interval Training) workout or go for a run.</p>
-              <p>If you’re doing a strength workout, set aside more time for warming up and mobilising to help avoid injury and make sure you’re getting enough rest between sets. Either way, you definitely don’t need to be slogging it out for hours!</p>
+              <p class="lang"  key="A_PARAGRAPH1_4">This depends on your fitness levels, what type of training you’re doing and what intensity you’re training at. Just remember, something is always better than nothing. If you only have 30 minutes, try to fit in a quick HIIT (High Intensity Interval Training) workout or go for a run. If you’re doing a strength workout, set aside more time for warming up and mobilising to help avoid injury and make sure you’re getting enough rest between sets. Either way, you definitely don’t need to be slogging it out for hours!</p>
             </div>
             <!-- 5 -->
-            <li class="item">Do I need to vary my workout to see results?<i class="fas fa-plus"></i></li>
+            <li class="item lang" key="A_LIST1_5">Do I need to vary my workout to see results?</li>
             <div class="answer-text">
-              <p>If you want to see real change in your body you need to mix up your routine. The body quickly adapts to exercise and if you continue to do the same workout or use the same weights, it will plateau as it stops responding to the training stimulus. Increase frequency, intensity or the type of training as often as you can.</p>
+              <p class="lang"  key="A_PARAGRAPH1_5">If you want to see real change in your body you need to mix up your routine. The body quickly adapts to exercise and if you continue to do the same workout or use the same weights, it will plateau as it stops responding to the training stimulus. Increase frequency, intensity or the type of training as often as you can.</p>
             </div>
             
           </ul>
           <!-- list tow -->
           <ul class="answer q2">
               <!-- 1 -->
-            <li class="item">How do I get a six-pack?<i class="fas fa-plus"></i></li>
+            <li class="item lang" key="A_LIS2_1">How do I get a six-pack?</li>
             <div class="answer-text">
-              <p>Doing 100 sit-ups a day won’t guarantee a defined set of abs; you’ll need to do a combination of things. Reducing body fat should be first on the agenda – you may have the strongest set of abdominal muscles but if your body fat percentage is too high, you won’t be able to see them.</p>
-              <p>Be sure to include some fat-burning HIIT training and cardio in your routine. However, diet is arguably the most important factor if you want to get lean. Use apps such as My Fitness Pal to track your calorie intake and if weight loss is your goal, ensure you are in a calorie deficit (burning more calories than you eat).</p>
-              <p>When you’ve reached your body fat goals, it’s time to target the abdominals and increase their muscle mass through your training. Great core exercises include plank variations, bicycle crunches and cable rotations, or try abs-specific classes at the gym.</p>
+              <p class="lang"  key="A_PARAGRAPH2_1">Doing 100 sit-ups a day won’t guarantee a defined set of abs; you’ll need to do a combination of things. Reducing body fat should be first on the agenda – you may have the strongest set of abdominal muscles but if your body fat percentage is too high, you won’t be able to see them. Be sure to include some fat-burning HIIT training and cardio in your routine. However, diet is arguably the most important factor if you want to get lean. Use apps such as My Fitness Pal to track your calorie intake and if weight loss is your goal, ensure you are in a calorie deficit (burning more calories than you eat). When you’ve reached your body fat goals, it’s time to target the abdominals and increase their muscle mass through your training. Great core exercises include plank variations, bicycle crunches and cable rotations, or try abs-specific classes at the gym.</p>
             </div>
               <!-- 2 -->
-            <li class="item">What type of training do I need to do to increase muscle mass?<i class="fas fa-plus"></i></li>
+            <li class="item lang " key="A_LIST2_2">What type of training do I need to do to increase muscle mass?</li>
             <div class="answer-text">
-              <p>If you want to build muscle, you’ll need to start weight training. Lifting heavy weights effectively rips the muscle fibres and as the body repairs, it replaces damaged muscle fibres to form new strands. As a result, this increases the thickness and size of the muscle.</p>
-              <p>Choose heavier weights for lower reps and take a longer rest between sets. It’s important to train the muscle groups you want to build a few times per week. And don’t forget to increase your calorie intake – you need to feed muscles if you want them to grow.</p>
+              <p class="lang"  key="A_PARAGRAPH2_2">If you want to build muscle, you’ll need to start weight training. Lifting heavy weights effectively rips the muscle fibres and as the body repairs, it replaces damaged muscle fibres to form new strands. As a result, this increases the thickness and size of the muscle. Choose heavier weights for lower reps and take a longer rest between sets. It’s important to train the muscle groups you want to build a few times per week. And don’t forget to increase your calorie intake – you need to feed muscles if you want them to grow.</p>
             </div>
               <!-- 3 -->
-            <li class="item">What type of training do I need to do to lose weight?<i class="fas fa-plus"></i></li>
+            <li class="item lang " key="A_LIST2_3">What type of training do I need to do to lose weight?</li>
             <div class="answer-text">
-              <p>Generally, cardio training such as swimming or running will burn the most calories per session. Weight training will help you burn more calories over the course of the day – muscle burns more calories at rest than other tissues, including fat, and therefore speeds up your resting metabolism.</p>
-              <p>Researchers at the <a href="https://pubmed.ncbi.nlm.nih.gov/25162652/" target="_blank" rel="noopener noreferrer">University of Colorado</a> have found that HIIT exercise burns 25%-30% more calories than a steady-state exercise session such as a run. Therefore, combining cardio, weights and HIIT-specific training alongside a diet that will leave you in a calorie deficit is the most effective route to weight loss.</p>
+              <p class="lang"  key="A_PARAGRAPH2_3">Generally, cardio training such as swimming or running will burn the most calories per session. Weight training will help you burn more calories over the course of the day – muscle burns more calories at rest than other tissues, including fat, and therefore speeds up your resting metabolism. Researchers at the University of Colorado have found that HIIT exercise burns 25%-30% more calories than a steady-state exercise session such as a run. Therefore, combining cardio, weights and HIIT-specific training alongside a diet that will leave you in a calorie deficit is the most effective route to weight loss.</p>
             </div>
               <!-- 4 -->
-            <li class="item">What type of training do I need to get stronger?<i class="fas fa-plus"></i></li>
+            <li class="item lang " key="A_LIST2_4"></li>
             <div class="answer-text">
-              <p>Strength can mean different things to different people. For some it can mean being able to do one pull up, for others it might be reaching a deadlift PB, which is why it is important to train for your goals. In order to gain strength in a targeted area, you need to gradually increase your volume (times per week and reps) and the intensity of those sessions. Try setting yourself realistic targets each week so that you have something specific to aim for.</p>
+              <p class="lang"  key="A_PARAGRAPH2_4">Strength can mean different things to different people. For some it can mean being able to do one pull up, for others it might be reaching a deadlift PB, which is why it is important to train for your goals. In order to gain strength in a targeted area, you need to gradually increase your volume (times per week and reps) and the intensity of those sessions. Try setting yourself realistic targets each week so that you have something specific to aim for.</p>
             </div>
             
           </ul>
           <!-- list three -->
           <ul class="answer q3">
               <!-- 1 -->
-            <li class="item">How often do I need to rest?<i
-                class="fas fa-plus"></i></li>
+            <li class="item lang " key="A_LIST3_1" >How often do I need to rest?</li>
             <div class="answer-text">
-              <p>Ensure you have at least one rest day per week to allow your body to regenerate and repair, so you can come back stronger.</p>
+              <p class="lang"  key="A_PARAGRAPH3_1">Ensure you have at least one rest day per week to allow your body to regenerate and repair, so you can come back stronger.</p>
             </div>
               <!-- 2 -->
-            <li class="item">When should I stretch and how often?<i
-                class="fas fa-plus"></i></li>
+            <li class="item lang " key="A_LIST3_2">What’s the best way to help sore muscles?</li>
             <div class="answer-text">
-              <p>Start with some dynamic stretching (active muscular stretching such as walking lunges or jogging with high knees) before a workout. Then, do static stretches such as a standing thigh stretch or side lunge for post-workout recovery, focusing on the muscles you’ve worked. This will decrease your risk of injury, improve blood flow and circulation, increase your range of motion and improve muscle function. You can never stretch too much!
-            </p>
+              <p class="lang"  key="A_PARAGRAPH3_2">Diet plays a vital role in the rate at which your body can recover – protein is crucial for decreasing muscle damage and soreness after a workout, so make sure to fuel up properly. Rest and plenty of sleep will also give the body time to repair. Treat yourself to a bath with Epsom salts, which are packed with magnesium that will gently relax muscles. Or try foam rolling, which acts as a self-massage and prevents damage to the connective tissue between the muscles.</p>
             </div>
               <!-- 3 -->
-            <li class="item">What’s the best way to help sore muscles?<i
-                class="fas fa-plus"></i></li>
+            <li class="item lang "  key="A_LIST3_3">How does exercise help mental health?</li>
             <div class="answer-text">
-              <p>Diet plays a vital role in the rate at which your body can recover – protein is crucial for decreasing muscle damage and soreness after a workout, so make sure to fuel up properly. Rest and plenty of sleep will also give the body time to repair.</p>
-              <p>Treat yourself to a bath with Epsom salts, which are packed with magnesium that will gently relax muscles. Or try foam rolling, which acts as a self-massage and prevents damage to the connective tissue between the muscles.</p>
-            </div>
-              <!-- 4 -->
-            <li class="item">How and when do I need to use a foam roller?<i
-                class="fas fa-plus"></i></li>
-            <div class="answer-text">
-              <p>Foam rolling acts as a deep tissue massage, which will help to improve mobility and flexibility. Rolling pre-workout will prepare your body for exercise and increase circulation to the muscles you are preparing to train. Post-workout, foam rolling is a great recovery tool, as it removes lactic acid (a waste product your body produces during exercise) from your muscles.</p>
-            </div>
-              <!-- 5 -->
-            <li class="item">How does exercise help mental health?<i
-                class="fas fa-plus"></i></li>
-            <div class="answer-text">
-              <p>Research has shown that exercise can help to reduce stress, improve your self-confidence, alleviate anxiety and improve concentration. Plus, it releases endorphins, which encourage feelings of happiness.</p>
-              <p>Be careful not to over train, as this can put your body and mind under stress, raising levels of the stress hormone cortisol. Therefore a balanced exercise plan is key.</p>
+              <p class="lang"  key="A_PARAGRAPH3_3">Research has shown that exercise can help to reduce stress, improve your self-confidence, alleviate anxiety and improve concentration. Plus, it releases endorphins, which encourage feelings of happiness. Be careful not to over train, as this can put your body and mind under stress, raising levels of the stress hormone cortisol. Therefore a balanced exercise plan is key.</p>
             </div>
           </ul>
           <!-- list four -->
           <ul class="answer q4">
               <!-- 1 -->
-            <li class="item">How long should people rest in between workouts?<i class="fas fa-plus"></i></li>
+            <li class="item lang " key="A_LIST4_1">How long should people rest in between workouts?</li>
             <div class="answer-text">
-              <p>That depends on the type of workout and the intensity. Within 3 hours if they are training for endurance, 48 hours if training for hypertrophy (getting bigger) or upwards of two weeks if they are training for strength.</p>
-              <p>General rule of thumb is to leave 3 days between body parts for weights, and 24 hours for cardio.</p>
+              <p class="lang"  key="A_PARAGRAPH4_1">That depends on the type of workout and the intensity. Within 3 hours if they are training for endurance, 48 hours if training for hypertrophy (getting bigger) or upwards of two weeks if they are training for strength. General rule of thumb is to leave 3 days between body parts for weights, and 24 hours for cardio.</p>
             </div>
               <!-- 2 -->
-            <li class="item">Why are you having me lift weights for fat loss?<i class="fas fa-plus"></i></li>
+            <li class="item lang " key="A_LIST4_2">Why are you having me lift weights for fat loss?</li>
             <div class="answer-text">
-              <p>Fat loss requires more than trying to burn as many calories as possible during a workout. In actuality, the body, being the incredible machine that it is, adapts to steady-state activities and begins burning fewer calories during these (typically cardio-heavy) sessions. What’s more, it also becomes more efficient at storing fat. So, if your goal is to effectively change your body composition, you need to incorporate resistance training into your fitness program.</p>
+              <p class="lang"  key="A_PARAGRAPH4_2">Fat loss requires more than trying to burn as many calories as possible during a workout. In actuality, the body, being the incredible machine that it is, adapts to steady-state activities and begins burning fewer calories during these (typically cardio-heavy) sessions. What’s more, it also becomes more efficient at storing fat. So, if your goal is to effectively change your body composition, you need to incorporate resistance training into your fitness program.</p>
             </div>
               <!-- 3 -->
-            <li class="item">Are abdominal exercises effective if I want to lose extra fat around my stomach?<i class="fas fa-plus"></i></li>
+            <li class="item lang " key="A_LIST4_3">Are abdominal exercises effective if I want to lose extra fat around my stomach?</li>
             <div class="answer-text">
-              <p>No. Abdominal exercises are great for strengthening your core and back but there is no such thing as spot-reducing fat. Comprehensive cardiovascular workouts throughout the week are the most effective and will reduce the amount of fat that has accumulated on the body.</p>
+              <p class="lang"  key="A_PARAGRAPH4_3">No. Abdominal exercises are great for strengthening your core and back but there is no such thing as spot-reducing fat. Comprehensive cardiovascular workouts throughout the week are the most effective and will reduce the amount of fat that has accumulated on the body.</p>
             </div>
               <!-- 4 -->
-            <li class="item">How many calories does it take to burn one pound of fat?<i class="fas fa-plus"></i></li>
+            <li class="item lang " key="A_LIST4_4">How many calories does it take to burn one pound of fat?</li>
             <div class="answer-text">
-              <p>It takes 3,500 calories to gain or lose one pound. To lose one pound per week, you need to decrease your calories by 500 every day. This is usually done by cutting 250 calories out of your diet and burning the other 250 through activity.</p>
+              <p class="lang"  key="A_PARAGRAPH4_4">It takes 3,500 calories to gain or lose one pound. To lose one pound per week, you need to decrease your calories by 500 every day. This is usually done by cutting 250 calories out of your diet and burning the other 250 through activity.</p>
             </div>
               <!-- 5 -->
-            <li class="item">I have no time to exercise, what can I do?<i class="fas fa-plus"></i></li>
+            <li class="item lang" key="A_LIST4_5">I have no time to exercise, what can I do?</li>
             <div class="answer-text">
-              <p>This is – by far – the most common complaint I hear. If this is a challenge for you, concentrate on getting small workouts in throughout the day. If your job takes the majority of your time, consider taking 3-10 minute breaks and walk at moderate intensity, where you break a little sweat and are slightly out of breath. Taking these breaks are not only good for physical health, but also for mental health. You will go back to work feeling refreshed and satisfied.</p>
-              <p>If home life consumes most of your time, consider doing squats or other muscle toning exercises while doing housework. If you work from home, use a stability ball instead of a chair to sit on. Walk on the treadmill during conference calls.</p>
+              <p class="lang"  key="A_PARAGRAPH4_5">This is – by far – the most common complaint I hear. If this is a challenge for you, concentrate on getting small workouts in throughout the day. If your job takes the majority of your time, consider taking 3-10 minute breaks and walk at moderate intensity, where you break a little sweat and are slightly out of breath. Taking these breaks are not only good for physical health, but also for mental health. You will go back to work feeling refreshed and satisfied. If home life consumes most of your time, consider doing squats or other muscle toning exercises while doing housework. If you work from home, use a stability ball instead of a chair to sit on. Walk on the treadmill during conference calls.</p>
             </div>
 
           </ul>
@@ -692,13 +693,13 @@
         <div class="row justify-content-center">
             <div class="col-xl-8">
                 <div class="section_tittle text-center dark wow bounceIn" data-wow-offset="300">
-                    <h2>Contact <span>Us</span></h2>
+                    <h2  trans="CONTACT_HEADER">Contact <span>Me</span></h2>
                 </div>
             </div>
         </div>
       <div class="row wow fadeInUp" data-wow-duration="3s" data-wow-offset="200">
         <div class="col-12">
-          <h2 class="contact-title">Get in <span>Touch</span></h2>
+          <h2 class="contact-title lang" key="CONTACT_TITLE">Send your question</h2>
         </div>
         <div class="col-lg-8">
           <form class="form-contact contact_form" action="contact.php" method="post"  role="form" >
@@ -729,10 +730,10 @@
             <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message lang" key="SCC_MESSAGE">Your message has been sent. Thank you!</div>
               </div>
             <div class="form-group mt-3">
-              <button type="submit" class="button button-contactForm btn_4">Send Message</button>
+              <button type="submit" class="button button-contactForm btn_4 lang" key="BTN_SEND">Send Message</button>
             </div>
           </form>
         </div>
@@ -740,15 +741,15 @@
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-tablet"></i></span>
             <div class="media-body">
-              <h3>00 (440) 9865 562</h3>
-              <p>Mon to Fri 9am to 6pm</p>
+              <h3 class="phone">+20 1110769707</h3>
+              <p class="lang" key="ANY_TIME">Any time you want</p>
             </div>
           </div>
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="ti-email"></i></span>
             <div class="media-body">
-              <h3>shikovips@gmail.com</h3>
-              <p>Send us your query anytime!</p>
+              <h3>example@gmail.com</h3>
+              <p class="lang" key="SEND_TIME">Send me your query anytime!</p>
             </div>
           </div>
         </div>
@@ -763,13 +764,13 @@
             <div class="row justigy-content-center">
                 <div class="col-lg-12">
                     <div class="social_icon">
-                        <a href="https://twitter.com/SherifA30248725?fbclid=IwAR2jyJVJfnXfSwRdifDjWSzK1OOOzkUJycCsQnwiATjI6hBSq2GkCshyOug" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=100009994145164" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/Sherif._ashraf/?fbclid=IwAR1zmzdsNODBv_ZV7lFiEhxfQSyGKL8hKRkofY4ci2DMMRjvivSCj_3SLwY" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-                        <a href="https://api.whatsapp.com/send/?phone=201110769707&text&app_absent=0" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
                     </div>
                     <p class="footer-text">
-Copyright <span style="color: #f3333e;">SHIX</span> &copy;<script>document.write(new Date().getFullYear());</script>  All rights reserved.</p>
+Copyright <span style="color: #f3333e;">Saico</span> &copy;<script>document.write(new Date().getFullYear());</script>  All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -796,11 +797,13 @@ Copyright <span style="color: #f3333e;">SHIX</span> &copy;<script>document.write
     <script src="./js/jquery.nice-select.min.js"></script>
     <script src="./js/hover-direction-snake.min.js"></script>
     <!-- validate concat -->
-    <script src="js/validate.js"></script>
+    <script src="js/mail-validate.js"></script>
     <!-- animate wow -->
     <script src="./js/wow.min.js"></script>
     <!-- lazyload -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"></script>
+    <!-- translate js -->
+    <script src="./js/translate.js"></script>
     <!-- custom js -->
     <script src="./js/custom.js"></script>
 </body>
